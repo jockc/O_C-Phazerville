@@ -16,9 +16,9 @@ using namespace HS;
 #include "ADEG.h"
 #include "ASR.h"
 #include "AttenuateOffset.h"
-#ifdef PEWPEWPEW
-#include "Binary.h"
-#endif
+//#ifdef PEWPEWPEW
+//#include "Binary.h"
+//#endif
 #include "BootsNCat.h"
 #include "Brancher.h"
 #include "BugCrack.h"
@@ -50,9 +50,9 @@ using namespace HS;
 #include "DivSeq10.h"
 #include "DrumMap.h"
 #include "DualQuant.h"
-#ifdef PEWPEWPEW
-#include "OffsetQuant.h"
-#endif
+//#ifdef PEWPEWPEW
+//#include "OffsetQuant.h"
+//#endif
 #include "TwoRings.h"
 #if !defined(CUSTOM_BUILD) || defined(PEWPEWPEW)
 #include "DuoTET.h"
@@ -61,9 +61,9 @@ using namespace HS;
 #ifdef ENABLE_APP_ENIGMA
 #include "EnigmaJr.h"
 #endif
-#ifdef PEWPEWPEW
-#include "EnsOscKey.h"
-#endif
+//#ifdef PEWPEWPEW
+//#include "EnsOscKey.h"
+//#endif
 #include "EnvFollow.h"
 #include "EnvSeq.h"
 #include "EuclidO.h"
@@ -145,9 +145,9 @@ constexpr Registry reg = Registry<HemisphereApplet, HS::APPLET_SLOTS
     , DeclareApplet<ADEG, 34, CAT_MODULATOR>
     , DeclareApplet<MiniASR, 47, CAT_MODULATOR | CAT_QUANTIZER>
     , DeclareApplet<AttenuateOffset, 56, CAT_UTILITY>
-#ifdef PEWPEWPEW
-    , DeclareApplet<Binary, 41, CAT_LOGIC | CAT_MODULATOR>
-#endif
+                                  //#ifdef PEWPEWPEW
+                                  //    , DeclareApplet<Binary, 41, CAT_LOGIC | CAT_MODULATOR>
+                                  //#endif
     , DeclareApplet<BitBeat, 79, CAT_MODULATOR>
     , DeclareApplet<BootsNCat, 55, CAT_OTHER>
     , DeclareApplet<Brancher, 4, CAT_UTILITY | CAT_CLOCKING>
@@ -173,9 +173,9 @@ constexpr Registry reg = Registry<HemisphereApplet, HS::APPLET_SLOTS
     , DeclareApplet<DrLoFi, 16, CAT_OTHER>
     , DeclareApplet<DrumMap, 57, CAT_SEQUENCER>
     , DeclareApplet<DualQuant, 9, CAT_QUANTIZER>
-#ifdef PEWPEWPEW
-    , DeclareApplet<OffsetQuant, 90, CAT_QUANTIZER>
-#endif
+                                  //#ifdef PEWPEWPEW
+                                  //    , DeclareApplet<OffsetQuant, 90, CAT_QUANTIZER>
+                                  //#endif
 #if !defined(CUSTOM_BUILD) || defined(PEWPEWPEW)
     , DeclareApplet<DuoTET, 63, CAT_QUANTIZER>
 #endif
@@ -183,9 +183,9 @@ constexpr Registry reg = Registry<HemisphereApplet, HS::APPLET_SLOTS
 #ifdef ENABLE_APP_ENIGMA
     , DeclareApplet<EnigmaJr, 45, CAT_SEQUENCER>
 #endif
-#ifdef PEWPEWPEW
-    , DeclareApplet<EnsOscKey, 35, CAT_QUANTIZER>
-#endif
+                                  //#ifdef PEWPEWPEW
+                                  //    , DeclareApplet<EnsOscKey, 35, CAT_QUANTIZER>
+                                  //#endif
     , DeclareApplet<EnvFollow, 42, CAT_UTILITY | CAT_MODULATOR>
 #ifdef __IMXRT1062__
     , DeclareApplet<EnvSeq, 91, CAT_SEQUENCER>
