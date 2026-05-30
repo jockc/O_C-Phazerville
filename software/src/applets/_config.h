@@ -68,9 +68,9 @@ using namespace HS;
 #include "EnvSeq.h"
 #include "EuclidO.h"
 #include "EuclidX.h"
-#ifdef PEWPEWPEW
-#include "GameOfLife.h"
-#endif
+//#ifdef PEWPEWPEW
+//#include "GameOfLife.h"
+//#endif
 #include "GateDelay.h"
 //#include "GatedVCA.h"
 #include "DrLoFi.h"
@@ -102,9 +102,9 @@ using namespace HS;
 #include "Seq32.h"
 #include "SeqPlay7.h"
 #include "ShiftGate.h"
-#ifdef PEWPEWPEW
-#include "ShiftReg.h"
-#endif
+//#ifdef PEWPEWPEW
+//#include "ShiftReg.h"
+//#endif
 #include "Shredder.h"
 #include "Shuffle.h"
 #include "Slew.h"
@@ -192,9 +192,9 @@ constexpr Registry reg = Registry<HemisphereApplet, HS::APPLET_SLOTS
 #endif
     , DeclareApplet<EuclidO, 83, CAT_SEQUENCER>
     , DeclareApplet<EuclidX, 15, CAT_SEQUENCER>
-#ifdef PEWPEWPEW
-    , DeclareApplet<GameOfLife, 22, CAT_MODULATOR>
-#endif
+                                  //#ifdef PEWPEWPEW
+                                  //    , DeclareApplet<GameOfLife, 22, CAT_MODULATOR>
+                                  //#endif
     , DeclareApplet<GateDelay, 29, CAT_CLOCKING>
                                   //#ifdef PEWPEWPEW
                                   //    , DeclareApplet<GatedVCA, 17, CAT_UTILITY | CAT_LOGIC>
@@ -231,9 +231,9 @@ constexpr Registry reg = Registry<HemisphereApplet, HS::APPLET_SLOTS
     , DeclareApplet<SeqPlay7, 76, CAT_SEQUENCER>
     , DeclareApplet<SequenceX, 14, CAT_SEQUENCER>
     , DeclareApplet<ShiftGate, 48, CAT_LOGIC | CAT_MODULATOR | CAT_CLOCKING>
-#ifdef PEWPEWPEW
-    , DeclareApplet<ShiftReg, 77, CAT_LOGIC | CAT_MODULATOR | CAT_CLOCKING>
-#endif
+                                  //#ifdef PEWPEWPEW
+                                  //    , DeclareApplet<ShiftReg, 77, CAT_LOGIC | CAT_MODULATOR | CAT_CLOCKING>
+                                  //#endif
     , DeclareApplet<Shredder, 58, CAT_MODULATOR>
     , DeclareApplet<Shuffle, 36, CAT_CLOCKING>
     , DeclareApplet<Slew, 19, CAT_MODULATOR>
