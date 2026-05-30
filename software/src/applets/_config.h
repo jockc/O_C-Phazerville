@@ -72,7 +72,7 @@ using namespace HS;
 #include "GameOfLife.h"
 #endif
 #include "GateDelay.h"
-#include "GatedVCA.h"
+//#include "GatedVCA.h"
 #include "DrLoFi.h"
 #include "Logic.h"
 #include "LowerRenz.h"
@@ -92,9 +92,9 @@ using namespace HS;
 #include "Relabi.h"
 #include "ResetClock.h"
 #include "RndWalk.h"
-#ifdef PEWPEWPEW
-#include "RunglBook.h"
-#endif
+//#ifdef PEWPEWPEW
+//#include "RunglBook.h"
+//#endif
 #include "ScaleDuet.h"
 #include "Schmitt.h"
 #include "Scope.h"
@@ -128,9 +128,9 @@ using namespace HS;
 #include "Voltage.h"
 #include "MarkoV.h"
 #include "MarkovPerc.h"
-#ifdef PEWPEWPEW
-#include "WTVCO.h"
-#endif
+//#ifdef PEWPEWPEW
+//#include "WTVCO.h"
+//#endif
 #include "Xfader.h"
 #include "hMIDIIn.h"
 #include "hMIDIOut.h"
@@ -196,9 +196,9 @@ constexpr Registry reg = Registry<HemisphereApplet, HS::APPLET_SLOTS
     , DeclareApplet<GameOfLife, 22, CAT_MODULATOR>
 #endif
     , DeclareApplet<GateDelay, 29, CAT_CLOCKING>
-#ifdef PEWPEWPEW
-    , DeclareApplet<GatedVCA, 17, CAT_UTILITY | CAT_LOGIC>
-#endif
+                                  //#ifdef PEWPEWPEW
+                                  //    , DeclareApplet<GatedVCA, 17, CAT_UTILITY | CAT_LOGIC>
+                                  //#endif
     , DeclareApplet<Logic, 10, CAT_LOGIC | CAT_CLOCKING>
     , DeclareApplet<LowerRenz, 21, CAT_MODULATOR>
     , DeclareApplet<Metronome, 50, CAT_CLOCKING>
@@ -221,9 +221,9 @@ constexpr Registry reg = Registry<HemisphereApplet, HS::APPLET_SLOTS
     , DeclareApplet<Relabi, 89, CAT_MODULATOR>
     , DeclareApplet<ResetClock, 70, CAT_UTILITY | CAT_CLOCKING>
     , DeclareApplet<RndWalk, 69, CAT_MODULATOR>
-#ifdef PEWPEWPEW
-    , DeclareApplet<RunglBook, 44, CAT_MODULATOR>
-#endif
+                                  //#ifdef PEWPEWPEW
+                                  //    , DeclareApplet<RunglBook, 44, CAT_MODULATOR>
+                                  //#endif
     , DeclareApplet<ScaleDuet, 26, CAT_QUANTIZER>
     , DeclareApplet<Schmitt, 40, CAT_LOGIC>
     , DeclareApplet<Scope, 23, CAT_OTHER>
@@ -258,9 +258,9 @@ constexpr Registry reg = Registry<HemisphereApplet, HS::APPLET_SLOTS
 //    , DeclareApplet<VectorMod, 53, CAT_MODULATOR> // awkward middle child
     , DeclareApplet<VectorMorph, 54, CAT_MODULATOR>
     , DeclareApplet<Voltage, 43, CAT_UTILITY>
-#ifdef PEWPEWPEW
-    , DeclareApplet<WTVCO, 67, CAT_OTHER>
-#endif
+                                  //#ifdef PEWPEWPEW
+                                  //    , DeclareApplet<WTVCO, 67, CAT_OTHER>
+                                  //#endif
     , DeclareApplet<Xfader, 33, CAT_UTILITY>
 >{};
 
